@@ -63,6 +63,9 @@
         </geometry>
         <xacro:material_abb_yellow/>
       </collision>
+      <xacro:cylinder_inertial radius="0.06" length="0.05" mass="10">
+          <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
+      </xacro:cylinder_inertial>
     </link>
     <link name="${prefix}link_2">
       <visual>
@@ -79,6 +82,9 @@
         </geometry>
         <xacro:material_abb_yellow/>
       </collision>
+      <xacro:cylinder_inertial radius="0.06" length="0.05" mass="10">
+          <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
+      </xacro:cylinder_inertial>
     </link>
     <link name="${prefix}link_3">
       <visual>
@@ -95,6 +101,9 @@
         </geometry>
         <xacro:material_abb_yellow/>
       </collision>
+      <xacro:cylinder_inertial radius="0.06" length="0.05" mass="10">
+          <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
+      </xacro:cylinder_inertial>
     </link>
     <link name="${prefix}link_4">
       <visual>
@@ -111,6 +120,9 @@
         </geometry>
         <xacro:material_abb_yellow/>
       </collision>
+      <xacro:cylinder_inertial radius="0.06" length="0.05" mass="5">
+          <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
+      </xacro:cylinder_inertial>
     </link>
     <link name="${prefix}link_5">
       <visual>
@@ -127,6 +139,9 @@
         </geometry>
         <xacro:material_abb_yellow/>
       </collision>
+      <xacro:cylinder_inertial radius="0.06" length="0.05" mass="2">
+          <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
+      </xacro:cylinder_inertial>
     </link>
     <link name="${prefix}link_6">
       <visual>
@@ -143,6 +158,9 @@
         </geometry>
         <xacro:material_abb_yellow/>
       </collision>
+      <xacro:cylinder_inertial radius="0.06" length="0.05" mass="1">
+          <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
+      </xacro:cylinder_inertial>
     </link>
 
     <joint name="${prefix}actuator_joint" type="prismatic">
@@ -220,6 +238,6 @@
     </joint>
 
     <xacro:irb6700_200_260_transmission prefix="${prefix}" />
-    <xacro:irb6700_200_260_gazebo prefix="${prefix}" />
+<!--    <xacro:irb6700_200_260_gazebo prefix="${prefix}" />-->
   </xacro:macro>
 </robot>
